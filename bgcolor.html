@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Background Color</title>
+    </head>
+    <style>
+        button{
+            align-content: center;
+            text-align: center;
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
+        body{
+            align-content: center;
+            justify-content: center;
+            background-color: beige;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <h1 align="center">WELCOME</h1>
+        <button align="center" style="font-size: x-large;" onclick="mygreen()">Click to green</button>
+        <button align="center" style="font-size: x-large;" onclick="myred()">Click to red</button>
+        <div id="one">
+            <h2 style="background-color: grey;"></h2>
+        </div>
+        <script>
+            let result=document.getElementById("one");
+            function change(color){
+                document.body.style.background=color;
+            }
+            function mygreen(){
+                change('green');
+                result.innerHTML="COLOR CHANGED";
+            }
+            function change(color){
+                document.body.style.background=color;
+            }
+            function myred(){
+                change('red');
+                result.innerHTML="COLOR CHANGED";
+            }    
+        </script>
+    </body>
+</html>
